@@ -2,7 +2,7 @@ from fastapi import APIRouter, Request, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 import logging
 from typing import Optional
-from services.organizer import IssueOrganizerService
+from app.services.organizer.organizer import IssueOrganizerService
 
 logger = logging.getLogger(__name__)
 
