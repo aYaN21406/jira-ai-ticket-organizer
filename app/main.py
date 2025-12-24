@@ -10,6 +10,10 @@ app = FastAPI(
     description="AI-powered ticket organizer for Jira Cloud"
 )
 
+# Include routers
+from app.webhooks import router as webhook_router
+app.include_router(webhook_router, prefix="/webhooks", tags=["webhooks"])
+
 
 @app.get("/")
 def root():
