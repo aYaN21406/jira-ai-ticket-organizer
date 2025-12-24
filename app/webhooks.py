@@ -3,7 +3,6 @@ from pydantic import BaseModel
 import logging
 from typing import Optional
 from services.organizer import IssueOrganizerService
-from config import settings
 
 logger = logging.getLogger(__name__)
 
